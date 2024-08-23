@@ -52,7 +52,7 @@ def generate_response(retrieved_info, query):
     # Define the prompt
     prompt = ChatPromptTemplate.from_messages(
         [
-            SystemMessage(content="You are an assistant that uses retrieved information to answer questions."),  # System context
+            SystemMessage(content="You are an assistant thet specializes in Travel and Tourism and the Olympics. You have to valuable information regarding tourism spots, tourism costs and prices, and the Olympics. You have to use the retrieved information to answer questions."),  # System context
             MessagesPlaceholder(variable_name="chat_history"),  # Chat history
             HumanMessagePromptTemplate.from_template(prompt_text)  # User input with retrieved info
         ]

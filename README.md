@@ -63,7 +63,7 @@ The user views the chatbot’s response and may continue the conversation, repea
 
 <br>
 
-## Setup and Installation
+## Setup and Installation (if you want to run each container independently)
 
 *Prerequisites*  
 1. Docker Desktop installed on your machine  
@@ -95,5 +95,14 @@ This command will run the backend on http://127.0.0.1:5000.
 `docker run -d -p 5173:5173 --name svelte-container sveltekit:node`  
 This command will run the frontend on http://127.0.0.1:5173.
 
+
+<br>
+
+## Setup and Installation (if you want to run it using docker compose)
+
+<br>
+
+*Build using docker compose: (make sure you are in the same directory as your backend code)*  
+`docker-compose up --build`  
 
 
